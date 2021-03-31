@@ -7,14 +7,26 @@
 
 import UIKit
 import CoreData
+import ApplozicSwift
+import ApplozicCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    static let config: ALKConfiguration = {
+        var config = ALKConfiguration()
+        // Change config based on requirement like:
+        // config.isTapOnNavigationBarEnabled = false
+        return config
+    }()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        ALKPushNotificationHandler.shared.dataConnectionNotificationHandlerWith(AppDelegate.config)
+        let alApplocalNotificationHnadler = ALAppLocalNotifications.appLocalNotificationHandler()
+        alApplocalNotificationHnadler?.dataConnectionNotificationHandler()
+
         return true
     }
 

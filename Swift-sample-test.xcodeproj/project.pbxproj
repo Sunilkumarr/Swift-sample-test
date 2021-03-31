@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,9 @@
 		184CAC31260DE12200625C21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184CAC2F260DE12200625C21 /* LaunchScreen.storyboard */; };
 		184CAC3C260DE12300625C21 /* Swift_sample_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184CAC3B260DE12300625C21 /* Swift_sample_testTests.swift */; };
 		184CAC47260DE12300625C21 /* Swift_sample_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184CAC46260DE12300625C21 /* Swift_sample_testUITests.swift */; };
+		184CAC91260E093C00625C21 /* ALChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184CAC8D260E08AC00625C21 /* ALChatManager.swift */; };
+		184CACDE260E498D00625C21 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184CACDD260E498D00625C21 /* SystemConfiguration.framework */; };
+		18D8454A261497F5009DF87F /* ApplozicSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 18D84549261497F5009DF87F /* ApplozicSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,8 @@
 		184CAC42260DE12300625C21 /* Swift-sample-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-sample-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		184CAC46260DE12300625C21 /* Swift_sample_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_sample_testUITests.swift; sourceTree = "<group>"; };
 		184CAC48260DE12300625C21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		184CAC8D260E08AC00625C21 /* ALChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALChatManager.swift; sourceTree = "<group>"; };
+		184CACDD260E498D00625C21 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D8454A261497F5009DF87F /* ApplozicSwift in Frameworks */,
+				184CACDE260E498D00625C21 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +92,8 @@
 				184CAC3A260DE12300625C21 /* Swift-sample-testTests */,
 				184CAC45260DE12300625C21 /* Swift-sample-testUITests */,
 				184CAC1F260DE11E00625C21 /* Products */,
+				184CAC5B260DE1A300625C21 /* Frameworks */,
+				9A8F051BFB70297E08E459F4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +110,7 @@
 		184CAC20260DE11E00625C21 /* Swift-sample-test */ = {
 			isa = PBXGroup;
 			children = (
+				184CAC8D260E08AC00625C21 /* ALChatManager.swift */,
 				184CAC21260DE11E00625C21 /* AppDelegate.swift */,
 				184CAC23260DE11E00625C21 /* SceneDelegate.swift */,
 				184CAC25260DE11E00625C21 /* ViewController.swift */,
@@ -131,6 +141,21 @@
 			path = "Swift-sample-testUITests";
 			sourceTree = "<group>";
 		};
+		184CAC5B260DE1A300625C21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				184CACDD260E498D00625C21 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A8F051BFB70297E08E459F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,6 +172,9 @@
 			dependencies = (
 			);
 			name = "Swift-sample-test";
+			packageProductDependencies = (
+				18D84549261497F5009DF87F /* ApplozicSwift */,
+			);
 			productName = "Swift-sample-test";
 			productReference = 184CAC1E260DE11E00625C21 /* Swift-sample-test.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +246,9 @@
 				Base,
 			);
 			mainGroup = 184CAC15260DE11E00625C21;
+			packageReferences = (
+				18D84548261497F5009DF87F /* XCRemoteSwiftPackageReference "ApplozicSwift" */,
+			);
 			productRefGroup = 184CAC1F260DE11E00625C21 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -264,6 +295,7 @@
 				184CAC26260DE11E00625C21 /* ViewController.swift in Sources */,
 				184CAC22260DE11E00625C21 /* AppDelegate.swift in Sources */,
 				184CAC24260DE11E00625C21 /* SceneDelegate.swift in Sources */,
+				184CAC91260E093C00625C21 /* ALChatManager.swift in Sources */,
 				184CAC2C260DE11E00625C21 /* Swift_sample_test.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +470,7 @@
 		184CAC4C260DE12300625C21 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +479,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.applozic.Swift-sample-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -456,6 +490,7 @@
 		184CAC4D260DE12300625C21 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +499,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.applozic.Swift-sample-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -591,6 +627,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		18D84548261497F5009DF87F /* XCRemoteSwiftPackageReference "ApplozicSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppLozic/ApplozicSwift.git";
+			requirement = {
+				branch = "SPM-Support-changes";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		18D84549261497F5009DF87F /* ApplozicSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18D84548261497F5009DF87F /* XCRemoteSwiftPackageReference "ApplozicSwift" */;
+			productName = ApplozicSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		184CAC2A260DE11E00625C21 /* Swift_sample_test.xcdatamodeld */ = {
